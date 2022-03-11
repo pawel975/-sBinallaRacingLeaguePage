@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve("dist"),
     publicPath: "/",
   },
+  mode: "development",
   module: {
     rules:[
       {
@@ -30,6 +31,10 @@ module.exports = {
       },
     ], 
   },  
+  devServer: {
+    static: './',
+    open:true
+  },
   plugins: [
     new HTMLWebpackPlugin({
       template: "index.html"

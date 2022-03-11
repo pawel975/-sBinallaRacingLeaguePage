@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
-import App from "./App.js";
-import "./styles.scss";
+import App from "./src/components/App.js";
+import "./src/styles/base.scss";
 
 const appRouting = (
   <Router>
-    {/* <Switch> */}
-      <Route exact path="/" component={App} />
-    {/* </Switch> */}
+    <Routes>
+      <Route exact path="/" element={<App/>} />
+    </Routes>
   </Router>
 );
 
