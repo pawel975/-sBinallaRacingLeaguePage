@@ -1,7 +1,18 @@
-import React from "react";
-
+import React, {useState} from 'react';
 const App = () => {
-   return <h1>Hello, World!</h1>;
+
+   const [timer, setTimer] = useState(0);
+
+   const handleClick = () => {
+      setTimer(timer+1)
+   }
+
+   return (
+      <>
+         <h1>Hello, World! {timer}</h1>
+         <button onClick={handleClick}>Add</button>
+      </>
+   )
 };
 
 export default App;
