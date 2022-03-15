@@ -1,0 +1,22 @@
+
+#page-wrapper{
+    width:100%;
+    position: relative;
+    min-height: 100vh;
+    outline:1px solid red;
+
+    #content-wrapper{
+        width:100%;
+        outline: 1px solid blue;
+        padding-bottom: 5em;
+    }
+    
+    #footer{
+        outline: 1px solid orange;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 5em;
+    }
+}
+
