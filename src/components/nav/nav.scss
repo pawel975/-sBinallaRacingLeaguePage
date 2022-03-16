@@ -8,8 +8,9 @@ nav {
     background-color: variables.$clr-VeryDark;
 
     .route {
+        flex-basis: 0;
+        flex-grow: 1;
         padding-block: 1rem;
-        width: 6rem;
         text-align: center;
         text-decoration: none;
         color: variables.$clr-Light;
@@ -19,5 +20,6 @@ nav {
             transition: 0.2s;
         }
     }
+
 }
     
