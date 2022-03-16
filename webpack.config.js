@@ -39,9 +39,9 @@ module.exports = {
             },
           },
         ]
-      },
-    ], 
-  },  
+    }
+      
+    ]},  
   devServer: {
     static: './',
     open:true
