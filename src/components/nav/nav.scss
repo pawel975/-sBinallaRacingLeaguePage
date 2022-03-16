@@ -1,0 +1,23 @@
+@use '../variables';
+
+nav {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    background-color: variables.$clr-VeryDark;
+
+    .route {
+        padding-block: 1rem;
+        width: 6rem;
+        text-align: center;
+        text-decoration: none;
+        color: variables.$clr-Light;
+
+        &:hover {
+            background-color: variables.$clr-Contrast;
+            transition: 0.2s;
+        }
+    }
+}
+    

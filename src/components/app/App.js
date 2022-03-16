@@ -18,7 +18,7 @@ const App = () => {
          
             <div id="content-wrapper">
                <Routes>
-                  <Route exact path="/" element={<Home/>} />
+                  <Route path="/" element={<Home/>} />
                   <Route path="/results" element={<Results/>} />
                </Routes>
             </div>
