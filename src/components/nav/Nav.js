@@ -1,4 +1,7 @@
 import React from "react";
+import { Link} from 'react-router-dom';
+import Home from "../home/Home";
+import Results from "../results/Results";
 
 const Nav = () => {
 
@@ -6,11 +9,8 @@ const Nav = () => {
         <>
             <nav>
                 <div role='tablist'>
-                    <button>Page</button>
-                    <button>Page</button>
-                    <button>Page</button>
-                    <button>Page</button>
-                    <button>Page</button>
+                    <Link to={"/"}>Home</Link>
+                    <Link to={"/results"}>Results</Link>
                 </div>
             </nav>
         </>
