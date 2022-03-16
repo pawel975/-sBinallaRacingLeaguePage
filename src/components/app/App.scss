@@ -41,7 +41,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: variables.$ffCasual;
+  font-family: variables.$ff-Casual;
+  background-color: variables.$clr-Dark;
 }
 
 /* A elements that don't have a class get default styles */
@@ -85,24 +86,17 @@ select {
 /***************/
 
 #page-wrapper{
-    width:100%;
+    width:clamp(40rem, 70%, 120rem);
     position: relative;
+    margin: auto;
     min-height: 100vh;
     // outline:1px solid red;
-    background-color: variables.$clrDark;
+    background-color: variables.$clr-Dark;
 
     #content-wrapper{
         width:100%;
         outline: 1px solid blue;
         padding-bottom: 5em;
-    }
-    
-    #footer{
-        outline: 1px solid orange;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 5em;
     }
 }
 

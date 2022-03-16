@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Banner from "../banner/Banner";
+import Footer from "../footer/Footer";
 import Home from "../home/Home";
 import Nav from "../nav/Nav";
 import Results from "../results/Results";
@@ -12,8 +13,8 @@ const App = () => {
       <>
          <div id="page-wrapper">
 
-            <Banner />
-            <Nav />
+            <Banner/>
+            <Nav/>
          
             <div id="content-wrapper">
                <Routes>
@@ -22,9 +23,7 @@ const App = () => {
                </Routes>
             </div>
             
-            <div id="footer">
-               footer
-            </div>
+            <Footer/>
 
          </div>
       </>
