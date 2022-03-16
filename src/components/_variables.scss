@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto+Mono&display=swap');
 
+@font-face {
+    font-family: 'Formula1';
+    src: url('../assets/fonts/Formula1.ttf');
+}
+
+
 // colors
 $clr-Dark: #333;
 $clr-VeryDark: #222;
@@ -8,7 +14,7 @@ $clr-Contrast: rgb(240, 48, 48);
 
 // fonts
 $ff-Casual: 'Roboto Mono', monospace;
-$ff-Headers: 'Racing Sans One', cursive;
+$ff-Headers: 'Formula1', sans-serif;
 
 // font sizes
 $fs-200: 0.875rem;
@@ -18,4 +24,5 @@ $fs-500: 1.875rem;
 $fs-600: 2.25rem;
 $fs-700: 2.875rem;
 $fs-800: 3.5rem;
+
 
