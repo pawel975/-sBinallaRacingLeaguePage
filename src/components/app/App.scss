@@ -94,9 +94,10 @@ select {
     background-color: variables.$clr-Dark;
 
     #content-wrapper{
+        margin-block: 2rem;
         width:100%;
         outline: 1px solid blue;
-        padding-bottom: 5em;
+        padding-bottom: 6em;
     }
 }
 

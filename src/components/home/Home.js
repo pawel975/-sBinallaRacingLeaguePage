@@ -1,9 +1,10 @@
 import React from "react";
+import '../home/home.scss';
 
 const Home = () => {
     return(
         <>
-            <div>Home Page</div>
+            <div id="main-home">Home Page</div>
         </>
     )
 }
