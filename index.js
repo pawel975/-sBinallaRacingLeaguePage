@@ -7,7 +7,7 @@ import "./src/components/app/App.scss";
 const appRouting = (
   <Router>
     <Routes>
-      <Route exact path="/" element={<App/>} />
+      <Route exact path="*" element={<App/>} />
     </Routes>
   </Router>
 );
