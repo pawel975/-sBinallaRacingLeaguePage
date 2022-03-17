@@ -26,26 +26,12 @@ module.exports = {
         use:[
           "style-loader",
           "css-loader",
-          "resolve-url-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true,
-            }
-          }
-
+          "sass-loader",
         ],
       },
       {
-        test: /\.ttf$/,
-        use: [
-          {
-            loader: 'ttf-loader',
-            options: {
-              name: './fonts/[hash].[ext]',
-            },
-          },
-        ]
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,

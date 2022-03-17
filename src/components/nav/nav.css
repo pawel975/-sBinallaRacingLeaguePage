@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto+Mono&display=swap");
+nav {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  background-color: #222;
+  font-size: 1rem;
+}
+nav .route {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-block: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+nav .route:hover {
+  background-color: #f03030;
+  transition: 0.3s;
+}/*# sourceMappingURL=nav.css.map */
