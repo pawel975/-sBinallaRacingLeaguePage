@@ -1,34 +1,65 @@
-import React from "react";
-import { Link} from 'react-router-dom';
+import React, {useState, useEffect} from "react";
+import { NavLink} from 'react-router-dom';
 import './nav.scss'
 
 const Nav = () => {
 
+const handleShowClass = (e) => {
+    console.log(e.target.className)
+}
+
     return (
         <>
             <nav>
-                <Link 
+                <NavLink 
                     to={"/"}
-                    className="route">Home
-                </Link>
-                <Link 
-                    to={"/standings"} className="route">Standings
-                </Link>
-                <Link 
-                    to={"/results"} className="route">Results
-                </Link>
-                <Link 
-                    to={"/calendar"} className="route">Calendar
-                </Link>
-                <Link 
-                    to={"/driver"} className="route">Driver
-                </Link>
-                <Link 
-                    to={"/map"} className="route">Map
-                </Link>
-                <Link 
-                    to={"/records"} className="route">Records
-                </Link>
+                    className="route"
+                    onClick={(e) => handleShowClass(e)}
+                    >
+                        Home
+                </NavLink>
+                <NavLink 
+                    to={"/standings"}
+                     className="route"
+
+                     >
+                    Standings
+                </NavLink>
+                <NavLink 
+                    to={"/results"}
+                     className="route"
+
+                     >
+                    Results
+                </NavLink>
+                <NavLink 
+                    to={"/calendar"}
+                     className="route"
+
+                     >
+                    Calendar
+                </NavLink>
+                <NavLink 
+                    to={"/driver"}
+                     className="route"
+
+                     >
+                    Driver
+                </NavLink>
+                <NavLink 
+                    to={"/map"}
+                     className="route"
+
+                     >
+                    Map
+                </NavLink>
+                <NavLink 
+                    to={"/records"}
+                    className="route"
+
+                    >
+                    Records
+                </NavLink>
             </nav>
         </>
     )

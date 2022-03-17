@@ -15,12 +15,17 @@ nav {
         text-align: center;
         text-decoration: none;
         color: variables.$clr-Light;
+        transition: .3s;
 
         &:hover {
             background-color: variables.$clr-Contrast;
-            transition: .3s;
+        }
+
+        &.active{
+            background-color: variables.$clr-Contrast;
         }
     }
+
 
 }
     

@@ -1,12 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto+Mono&display=swap");
+@use '../variables';
 #main-banner {
+  position: relative;
   width: 100%;
-  height: 50px;
+  height: 10rem;
+  overflow: hidden;
 }
-#main-banner img {
+
+#main-banner img#bannerBackground {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 10%;
-  outline: 10px solid red;
-  height: 50px;
-}/*# sourceMappingURL=banner.css.map */
+  width: 100%;
+}
+
+#main-banner img#logo {
+  height: 6rem;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+/*# sourceMappingURL=banner.css.map */
