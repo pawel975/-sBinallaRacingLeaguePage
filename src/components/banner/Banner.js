@@ -1,13 +1,13 @@
 import React from "react";
-import header from '../../assets/img/header.png';
 import './banner.scss'
+import headerBannerImg from '../../assets/img/header.png';
 
 const Banner = () => {
 
     return (
         <>
             <div id="main-banner" role='banner'>
-                <img src={header}/>
+                <img src={headerBannerImg}/>
             </div>
         </>
     )
