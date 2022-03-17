@@ -26,7 +26,14 @@ module.exports = {
         use:[
           "style-loader",
           "css-loader",
-          "sass-loader"
+          "resolve-url-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            }
+          }
+
         ],
       },
       {
@@ -35,12 +42,15 @@ module.exports = {
           {
             loader: 'ttf-loader',
             options: {
-              name: './font/[hash].[ext]',
+              name: './fonts/[hash].[ext]',
             },
           },
         ]
-    }
-      
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
     ]},  
   devServer: {
     static: './',

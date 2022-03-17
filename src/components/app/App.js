@@ -10,7 +10,7 @@ import Calendar from "../calendar/Calendar";
 import Driver from "../driver/Driver";
 import Map from "../map/Map";
 import Records from "../records/Records";
-import "./App.scss"
+import "./app.scss"
 
 const App = () => {
    

@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import App from "./src/components/app/App.js";
-import "./src/components/app/App.scss";
+import App from "./src/components/app/App";
 
 const appRouting = (
   <Router>
