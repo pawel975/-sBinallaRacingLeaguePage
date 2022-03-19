@@ -4,9 +4,7 @@ import './nav.scss'
 
 const Nav = () => {
 
-const handleShowClass = (e) => {
-    console.log(e.target.className)
-}
+
 
     return (
         <>
@@ -60,6 +58,12 @@ const handleShowClass = (e) => {
                     >
                     Records
                 </NavLink>
+                <a 
+                    href="http://192.168.192.42/AdminCenter/index.php?location=tracks"
+                    className="route"
+                    >
+                    Admin
+                </a>
             </nav>
         </>
     )
